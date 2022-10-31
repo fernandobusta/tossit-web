@@ -203,7 +203,10 @@ nav ul li a{
     margin: 30px 0;
     margin: 30px 0;
 }
-
+/*- Team photo*/
+.team-photo {
+    size: 50%;
+}
 /*-----------------Our-work--------------------*/
 
 #work button{
@@ -371,6 +374,61 @@ hr{
     display: block;
 }
 
+/* ------------------- TEAM PAGE ONLY -------------------*/
+
+/* Three columns side by side */
+.column-team {
+    float: left;
+    width: 18%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column-team {
+      width: 40%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card-team {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container-team {
+    padding: 0 16px;
+    font-size: small;
+  }
+  
+  /* Clear floats */
+  .container-team::after, .row-team::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title-team {
+    color: grey;
+  }
+  
+  .button-team {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button-team:hover {
+    background-color: #555;
+  }
 /*----------------------------------Media-Phone-index-page----------------------------------*/
 
 @media only screen and (max-width: 770px){
